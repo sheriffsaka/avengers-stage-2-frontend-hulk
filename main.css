@@ -9,3 +9,36 @@ body {
   margin: 0 auto;
   padding: 0 10px;
 }
+/* Header */
+.header{
+  display:grid;
+  grid-template-columns:2fr 1fr;
+  font-weight:lighter;
+  font-family:Arial, Helvetica, sans-serif;
+}
+.booking{
+  margin-left:50px;
+}
+.right img{
+  width:20px;
+  margin-right:10px;
+}
+.right p{
+  display:inline-block;
+}
+.right{
+  justify-self: end;
+  margin-right:10px;
+}
+.call{
+  margin-top:-20px;
+  margin-right:70px;
+}
+.currency{
+  margin-right:30px;
+}
+.lang{
+  margin-right:30px;
+}
+
+/* Header Ends Here */

@@ -77,3 +77,26 @@ body {
   background: #D66439;
   color:rgb(65, 62, 62);
 }
+@media screen and (max-width:600px){
+    .facilities .service-list ul{
+      flex-direction: column;
+      align-items: center;
+    }
+    .facilities .service-list ul li{
+      width:300px;
+      text-align: center;
+    }
+    .facilities{
+      width: 500px;
+      margin:auto;
+      text-align: center;
+    }
+    .browse-button{
+      width:170px;
+      height: 100px;
+    }
+    .facilities-image{
+      width: 250px;
+      height: 230px;
+    }
+}

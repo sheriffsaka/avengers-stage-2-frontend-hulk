@@ -4,3 +4,5 @@
 -  [@ifatoki](https://github.com/ifatoki)
 
 -  [@Feyikemi](https://github.com/Agboolafeyikemi)
+
+-  [@abdulazeez](https://githubb.com/abdulazeez001)

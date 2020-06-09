@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: calibri;
 }
 
 .container {
@@ -8,4 +9,71 @@ body {
   max-width: calc(100% - 20px);
   margin: 0 auto;
   padding: 0 10px;
+}
+.ofacilities{
+  text-align: center;
+  font-size:40px;
+  font-weight: 600;
+  color:rgb(65, 62, 62);
+}
+.ofacilities-small{
+  font-size:25px;
+  color:rgb(78, 77, 77);
+  text-align: center;
+  margin-top:-30px;
+}
+.facilities{
+  /* font-family: serif; */
+  /* margin: 0 auto; */
+  padding-left: 20px;
+  height:100vh;
+  width:95%;
+  /* background: green; */
+}
+.fname{
+  color:black;
+  font-size: 40px;
+}
+.facilities .service-list ul{
+  list-style: none;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
+.facilities-image{
+  width:350px;
+  height:330px;
+}
+.facilities .service-list ul li{
+  width:400px;
+  min-height:450px;
+  /* background: white; */
+  margin:5px 5px;
+  text-align: center;
+  /* line-height: 10px; */
+}
+.fname{
+  font-weight: 550;
+  color:rgb(65, 62, 62);
+}
+.fname-desc{
+  font-size:20px;
+  margin-top:-35px;
+  color:rgb(78, 77, 77);
+  font-weight: 500;
+}
+.browse{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+.browse-button{
+  margin: 0 auto;
+  height: 80px;
+  width:360px;
+  font-weight: 600;
+  font-size: 30px;
+  text-align: center;
+  background: #D66439;
+  color:rgb(65, 62, 62);
 }

@@ -15,7 +15,8 @@ body {
 }
 
 /* Header */
-.header{
+
+.header {
   display: flex;
   justify-content: space-between;
   flex-flow: row wrap;
@@ -34,13 +35,121 @@ body {
 .right img {
   width: 20px;
 }
+
 /* Header Ends Here */
 
+/* Facilities section */
+
+.facilities {
+  margin: 50px auto;
+}
+
+.ofacilities {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 10px 0;
+  color: rgb(65, 62, 62);
+}
+
+.ofacilities-small {
+  font-size: 1.1rem;
+  color: rgb(78, 77, 77);
+  text-align: center;
+}
+
+.fname {
+  color: black;
+  font-size: 1.3rem;
+  margin: 10px 0;
+}
+
+.facilities .service-list ul {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.facilities-image {
+  width: 100%;
+}
+
+.facilities .service-list ul li {
+  width: 400px;
+  margin: 15px 5px;
+  text-align: center;
+}
+
+.fname {
+  font-weight: 550;
+  color: rgb(65, 62, 62);
+}
+
+.fname-desc {
+  font-size: 1.1rem;
+  margin: 5px 0;
+  color: rgb(78, 77, 77);
+  font-weight: 500;
+}
+
+.browse {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+
+.browse-button {
+  margin: 0 auto;
+  height: 80px;
+  width: 360px;
+  font-weight: 600;
+  font-size: 1.3rem;
+  text-align: center;
+  background: #D66439;
+  color: #2c2c2c;
+}
+
+@media screen and (max-width:600px) {
+  .facilities .service-list ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  .facilities .service-list ul li {
+    width: 300px;
+    text-align: center;
+  }
+  .facilities {
+    width: 300px;
+    margin: auto;
+    /* position: relative; */
+    /* left:10%; */
+    text-align: center;
+  }
+  .browse-button {
+    width: 170px;
+    height: 100px;
+  }
+  .fname {
+    /* font-size: 30px; */
+  }
+  .fname-desc {
+    /* font-size: 20px; */
+  }
+  .facilities-image {
+    width: 100%;
+  }
+}
+
+/* End of facilities section */
 
 /* Callback form */
+
 .contact-us h2 {
   text-align: center;
 }
+
 .contact {
   left: 0px;
   top: 6133px;
@@ -109,7 +218,6 @@ body {
   .callback-form input {
     width: 80%;
   }
-
   .contact {
     padding: 20px 20px 20px 20px;
   }

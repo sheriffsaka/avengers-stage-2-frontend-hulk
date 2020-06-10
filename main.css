@@ -1,3 +1,14 @@
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -5,13 +16,14 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 2em;
   color: #2c2c2c;
+  font-size: 1.6rem;
 }
 
 .container {
   width: 1366px;
   max-width: calc(100% - 20px);
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 1rem;
 }
 
 /* Header */
@@ -33,38 +45,35 @@ body {
 }
 
 .right img {
-  width: 20px;
+  width: 2rem;
 }
 
 /* Header Ends Here */
 
-/* Facilities section */
 
+/* Facilities section */
 .facilities {
-  margin: 50px auto;
+  margin: 5rem auto;
 }
 
-.ofacilities {
+.heading {
   text-align: center;
-  font-size: 1.5rem;
   font-weight: 600;
   margin: 10px 0;
   color: rgb(65, 62, 62);
 }
 
-.ofacilities-small {
-  font-size: 1.1rem;
+.paragraph {
   color: rgb(78, 77, 77);
   text-align: center;
 }
 
-.fname {
+.facility_name {
   color: black;
-  font-size: 1.3rem;
   margin: 10px 0;
 }
 
-.facilities .service-list ul {
+.facilities_list ul {
   padding: 0;
   list-style: none;
   display: flex;
@@ -76,66 +85,89 @@ body {
   width: 100%;
 }
 
-.facilities .service-list ul li {
+.facilities_list ul li {
   width: 400px;
   margin: 15px 5px;
   text-align: center;
 }
 
-.fname {
+.facility_name {
   font-weight: 550;
   color: rgb(65, 62, 62);
 }
 
-.fname-desc {
-  font-size: 1.1rem;
+.facility_desc {
   margin: 5px 0;
   color: rgb(78, 77, 77);
   font-weight: 500;
 }
 
-.browse {
+.button {
   display: flex;
   justify-content: center;
   padding-bottom: 30px;
 }
 
-.browse-button {
+.btn {
   margin: 0 auto;
-  height: 80px;
-  width: 360px;
   font-weight: 600;
-  font-size: 1.3rem;
+  font-size: 2rem;
   text-align: center;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  transition: all .3s;
+  font-weight: bold;
+}
+
+.btn_small {
+  padding: 10px 30px;
+  display: inline-block;
+  margin-top: 15px;
+  height: 55px;
+  width: 20rem;
+}
+.btn_large {
+  height: 8rem;
+  width: 36rem;
+}
+.btn--primary {
   background: #D66439;
   color: #2c2c2c;
 }
+.btn--secondary {
+  color: #d66939;
+  background-color: #fff;
+}
+
+.btn--primary:hover {
+  cursor: pointer;
+  transform: scaleY(1.1);
+}
+.btn--secondary:hover {
+  background-color: transparent;
+  color: #ffffff;
+  border: 3px solid white;
+}
 
 @media screen and (max-width:600px) {
-  .facilities .service-list ul {
+  .facilities_list ul {
     flex-direction: column;
     align-items: center;
   }
-  .facilities .service-list ul li {
-    width: 300px;
+  .facilities_list ul li {
+    width: 30rem;
     text-align: center;
   }
   .facilities {
-    width: 300px;
+    width: 30rem;
     margin: auto;
-    /* position: relative; */
-    /* left:10%; */
     text-align: center;
   }
+
   .browse-button {
-    width: 170px;
-    height: 100px;
-  }
-  .fname {
-    /* font-size: 30px; */
-  }
-  .fname-desc {
-    /* font-size: 20px; */
+    width: 17rem;
+    height: 10rem;
   }
   .facilities-image {
     width: 100%;
@@ -144,82 +176,50 @@ body {
 
 /* End of facilities section */
 
-/* Callback form */
 
-.contact-us h2 {
-  text-align: center;
-}
-
-.contact {
-  left: 0px;
-  top: 6133px;
+/* contact us section */
+.form_wrapper {
   background-color: #d66939;
-  padding: 30px 0;
+  padding: 5rem;
 }
 
-.contact h3 {
-  font-weight: bold;
-  font-size: 40px;
+
+.form_wrapper h2 {
+  font-weight: 600;
+  font-size: 3.5rem;
   color: #fff;
-  margin: 12px 0;
+  margin: 3rem 0;
 }
 
-.callback-form label {
-  display: block;
-  margin-bottom: 5px;
+.form-control:first-child {
+  margin-bottom: 4rem;
 }
 
-.callback-form .form-control {
-  margin-bottom: 15px;
-}
-
-.callback-form input {
-  width: 40%;
+.input {
+  width: 40rem;
   padding: 4px 20px;
   height: 60px;
   border: #f5f5f5 5px solid;
   background: none;
   border: 3px solid #ffffff;
-  font-size: 1rem;
+  color: #fff;
+  outline: none;
+}
+
+.input::placeholder {
   color: #fff;
 }
 
-.callback-form input::placeholder {
-  color: #fff;
-}
-
-.callback-form input:focus {
+.input:focus {
   outline-color: none;
 }
 
-.btn {
-  cursor: pointer;
-  display: inline-block;
-  padding: 10px 30px;
-  height: 55px;
-  border: none;
-  border-radius: 1px;
-  font-size: 1rem;
-  font-weight: bold;
-  color: #d66939;
-  width: 10%;
-  background-color: #fff;
-  margin-top: 15px;
-}
-
-.btn:hover {
-  opacity: 0.9;
-}
-
 @media (max-width: 500px) {
-  .callbackForm .formControl {
-    display: block;
+  .form_wrapper {
+    padding: 5rem 2rem;
   }
-  .callback-form input {
-    width: 80%;
-  }
-  .contact {
-    padding: 20px 20px 20px 20px;
+  .form input {
+    width: 30rem;
   }
   .contact h3 {
     font-size: 30px;

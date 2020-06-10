@@ -9,7 +9,7 @@
 
 <body>
   <!-- This is the header at the top of the page showing booking time -->
-  <div class="header container">
+  <header class="header container">
     <p>BOOKING 8AM-10PM </p>
     <div class="right">
       <img src="./assets/icons/call.svg" />
@@ -17,7 +17,8 @@
       <p>USD</p>
       <p>ENGLISH</p>
     </div>
-  </div>
+  </header>
+
   <!-- This hero is a section on it's own -->
   <section class="hero">
     <nav class="navbar"></nav>
@@ -29,92 +30,103 @@
   <section class="about-us"></section>
   <!-- Rooms section -->
   <section class="rooms"></section>
+
   <!-- Facilities secction -->
   <section class="facilities container">
-    <div>
-      <p class="ofacilities">OUR FACILITIES</p>
-      <p class='ofacilities-small'>
+    <header>
+      <h2 class="heading">OUR FACILITIES</h2>
+      <p class='paragraph'>
         Esty Hotel offers the best facilities that meets your demand <br>
         we have so many of our facilities to show you
       </p>
-    </div>
-    <div class="service-list">
+    </header>
+
+    <div class="facilities_list">
       <ul>
         <li>
           <img class="facilities-image" src="./assets/pool.png" />
-          <p class="fname">SWIMMING POOL</p>
-          <p class="fname-desc">
+          <p class="facility_name">SWIMMING POOL</p>
+          <p class="facility_desc">
             Where our guest can take a swim in our swimming pool
           </p>
         </li>
         <li>
           <img class="facilities-image" src="./assets/spa.png" />
-          <p class="fname">SPA</p>
-          <p class="fname-desc">
+          <p class="facility_name">SPA</p>
+          <p class="facility_desc">
             Where our guest can have a soothing spa experience
           </p>
         </li>
         <li>
           <img class="facilities-image" src="./assets/restaurant.png" />
           <div class="facility">
-            <p class="fname">RESTAURANT</p>
-            <p class="fname-desc">
+            <p class="facility_name">RESTAURANT</p>
+            <p class="facility_desc">
               Our guest can be entertained in our well desgined restaurant
             </p>
           </div>
         </li>
       </ul>
     </div>
-    <div class="service-list">
+
+    <div class="facilities_list">
       <ul>
         <li>
           <img class="facilities-image" src="./assets/bar.png" />
-          <p class="fname">BAR</p>
-          <p class="fname-desc">
+          <p class="facility_name">BAR</p>
+          <p class="facility_desc">
             Where you can relax and serve the best drinks
           </p>
         </li>
         <li>
           <img class="facilities-image" src="./assets/lounge.png" />
-          <p class="fname">LOUNGE</p>
-          <p class="fname-desc">Beautiful and well conducive lounge</p>
+          <p class="facility_name">LOUNGE</p>
+          <p class="facility_desc">Beautiful and well conducive lounge</p>
         </li>
         <li>
           <img class="facilities-image" src="./assets/meeting-room.png" />
-          <p class="fname">MEETING ROOM</p>
-          <p class="fname-desc">
+          <p class="facility_name">MEETING ROOM</p>
+          <p class="facility_desc">
             Hold your seminar,board meetings, training at our 50 seater
             meeting room
           </p>
         </li>
-      </ul></div>
-    <div class='browse'><button class='browse-button'>BROWSE GALLERY</button></div>
-  </section>
-  <!-- Contact us section -->
-  <section class="contact-us">
-    <h2>CONTACT US</h2>
-    <div class="contact">
-      <div class="container">
-        <h3>Get in touch</h3>
-        <form action="" class="callback-form">
-          <div class="form-control">
-            <label for="name"></label>
-            <input type="text" name="name" id="name" placeholder="Your Name" />
-          </div>
-          <div class="form-control">
-            <label for="email"></label>
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="Your Email"
-            />
-          </div>
-          <button class="btn">SEND</button>
-        </form>
-      </div>
+      </ul>
+    </div>
+  
+    <!-- button -->
+    <div class='button'>
+      <button class='btn btn--primary btn_large'>BROWSE GALLERY</button>
     </div>
   </section>
+  <!-- Facilities section ends  -->
+
+
+  <!-- Contact us section -->
+  <section class="cta">
+    <h1 class="heading">CONTACT US</h1>
+
+    <div class="form_wrapper">
+        <h2>Get in touch</h2>
+        <form action="" class="form">
+
+          <div class="form-control">
+            <label for="name"></label>
+            <input type="text" name="name" class="input" id="name" placeholder="Your Name" />
+          </div>
+
+          <div class="form-control">
+            <label for="email"></label>
+            <input type="email" name="email" class="input" id="email" placeholder="Your Email" />
+          </div>
+
+          <button class="btn btn--secondary btn_small">SEND</button>
+        </form>
+    </div>
+  </section>
+  <!-- contact us section ends -->
+
+
   <!-- Footer section -->
   <footer class="footer"></footer>
 

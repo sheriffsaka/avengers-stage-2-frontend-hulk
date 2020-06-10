@@ -228,3 +228,58 @@ body {
     width: 37%;
   }
 }
+
+/*This is the code for FOOTER SECTION*/
+.column{
+	float: left;
+	width: 50%;
+}
+.row::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+#ft{
+	background-color: #ffffff;
+	padding-top: 20px;
+	padding-left: 10px;
+	border-radius: 20px;
+	/*color: #2C2C2C;
+	font-family: calibri;*/
+}
+
+.footer{
+	height: 100px;
+	font-family: calibri;
+	color: #2C2C2C;
+	font-weight: bolder;
+	box-sizing: border-box;
+}
+
+.footer .img{
+	padding-right: 5px;
+}
+
+.footer span{
+	color: #D66939;
+	font-size: 20px;
+}
+
+.footer a{
+	display: inline-block;
+	text-decoration: none;
+}
+
+.footer li{
+	text-decoration: none;
+	display: block;
+	list-style-type: none;
+}
+
+@media screen and (max-width: 600px){
+	.column{
+		width: 100%;
+		text-align: center;
+	}
+}
